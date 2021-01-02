@@ -1,0 +1,16 @@
+[
+  {
+    "outputFileName": "wwwroot/dist/css/adminlte.min.css",
+    "inputFiles": [
+      "wwwroot/lib/admin-lte/css/adminlte.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/dist/js/adminlte.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery/jquery.js",
+      "wwwroot/lib/twitter-bootstrap/js/bootstrap.js",
+      "wwwroot/lib/admin-lte/js/adminlte.js"
+    ]
+  }
+]

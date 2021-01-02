@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "makeITeasy.AdminLTE.RazorClassLibrary", "makeITeasy.AdminLTE.RazorClassLibrary\makeITeasy.AdminLTE.RazorClassLibrary.csproj", "{69C5DA04-D8BE-4C85-850A-4FA7C7DA3530}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E25E29AF-56CB-4A2D-9776-79AE0359D3D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest", "makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest\makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest.csproj", "{9B4F011C-ACA9-4857-96EF-B6E180BC8D96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69C5DA04-D8BE-4C85-850A-4FA7C7DA3530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C5DA04-D8BE-4C85-850A-4FA7C7DA3530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C5DA04-D8BE-4C85-850A-4FA7C7DA3530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C5DA04-D8BE-4C85-850A-4FA7C7DA3530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B4F011C-ACA9-4857-96EF-B6E180BC8D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B4F011C-ACA9-4857-96EF-B6E180BC8D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B4F011C-ACA9-4857-96EF-B6E180BC8D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B4F011C-ACA9-4857-96EF-B6E180BC8D96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B4F011C-ACA9-4857-96EF-B6E180BC8D96} = {E25E29AF-56CB-4A2D-9776-79AE0359D3D4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A11D429-5AF0-47C8-949F-9FE00AA9E42B}
+	EndGlobalSection
+EndGlobal
