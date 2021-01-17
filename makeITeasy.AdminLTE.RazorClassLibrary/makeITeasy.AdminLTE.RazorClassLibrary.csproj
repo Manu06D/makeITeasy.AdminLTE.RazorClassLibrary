@@ -3,10 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.5</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <Content Remove="bundleconfig.json" />
+    <Content Remove="compilerconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,11 +18,14 @@
 
   <ItemGroup>
     <None Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\dist\css" />
     <Folder Include="wwwroot\dist\js" />
+    <Folder Include="wwwroot\lib\admin-lte\css\" />
+    <Folder Include="wwwroot\lib\admin-lte\js\" />
   </ItemGroup>
 
   <ItemGroup>

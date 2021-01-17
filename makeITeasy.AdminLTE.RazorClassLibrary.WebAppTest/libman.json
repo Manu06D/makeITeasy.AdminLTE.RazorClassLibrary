@@ -10,22 +10,12 @@
       ]
     },
     {
-      "library": "admin-lte@3.0.5",
+      "library": "admin-lte@3.1.0-rc",
       "destination": "wwwroot/lib/admin-lte/",
       "files": [
-        "js/pages/dashboard.js",
-        "js/pages/dashboard.min.js",
-        "js/pages/dashboard.min.js.map",
-        "js/pages/dashboard2.js",
-        "js/pages/dashboard2.min.js",
-        "js/pages/dashboard2.min.js.map",
-        "js/pages/dashboard3.js",
-        "js/pages/dashboard3.min.js",
-        "js/pages/dashboard3.min.js.map",
         "js/demo.js",
         "img/AdminLTELogo.png",
         "img/avatar.png",
-        "img/avatar04.png",
         "img/avatar2.png",
         "img/avatar3.png",
         "img/avatar5.png",
@@ -53,7 +43,6 @@
         "img/credit/american-express.png",
         "img/credit/cirrus.png",
         "img/credit/mastercard.png",
-        "img/credit/mestro.png",
         "img/credit/paypal.png",
         "img/credit/paypal2.png",
         "img/credit/visa.png"

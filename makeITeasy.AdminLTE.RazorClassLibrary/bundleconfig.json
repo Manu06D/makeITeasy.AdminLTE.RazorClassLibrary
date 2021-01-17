@@ -2,15 +2,35 @@
   {
     "outputFileName": "wwwroot/dist/css/adminlte.min.css",
     "inputFiles": [
-      "wwwroot/lib/admin-lte/css/adminlte.css"
-    ]
+      "wwwroot/lib/admin-lte/css/alt/adminlte.core.css",
+      "wwwroot/src/css/site.css"
+    ],
+    "minify": { "enabled": true }
+  },
+  {
+    "outputFileName": "wwwroot/dist/css/adminlte.additional.min.css",
+    "inputFiles": [
+      "wwwroot/lib/admin-lte/css/alt/adminlte.components.css",
+      "wwwroot/lib/admin-lte/css/alt/adminlte.extra-components.css",
+      "wwwroot/lib/admin-lte/css/alt/adminlte.plugins.css"
+    ],
+    "minify": {"enabled": true}
+  },
+  {
+    "outputFileName": "wwwroot/dist/css/adminlte.pages.min.css",
+    "inputFiles": [
+      "wwwroot/lib/admin-lte/css/alt/adminlte.pages.css"
+    ],
+    "minify": { "enabled": true }
   },
   {
     "outputFileName": "wwwroot/dist/js/adminlte.min.js",
     "inputFiles": [
       "wwwroot/lib/jquery/jquery.js",
       "wwwroot/lib/twitter-bootstrap/js/bootstrap.js",
-      "wwwroot/lib/admin-lte/js/adminlte.js"
-    ]
+      "wwwroot/lib/admin-lte/js/adminlte.js",
+      "wwwroot/src/js/site.js"
+    ],
+    "minify": { "enabled": true }
   }
 ]

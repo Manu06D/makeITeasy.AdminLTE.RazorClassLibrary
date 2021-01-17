@@ -1,0 +1,37 @@
+﻿@model makeITeasy.AdminLTE.RazorClassLibrary.Models.NavigationMenuViewModel
+@using makeITeasy.AdminLTE.RazorClassLibrary.Models
+
+@foreach (var menuItem in Model.Items)
+{
+    @if(menuItem.Type == MenuItemType.Divider)
+    {
+        <li class="nav-header">@menuItem.Title</li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a href="@menuItem.Link" class="nav-link">
+                @if(!String.IsNullOrWhiteSpace(menuItem.CssClass)){
+                    <i class="nav-icon @menuItem.CssClass"></i>
+                }
+                <p>@menuItem.Title
+                
+                    @if(menuItem.Badge != null)
+                    {
+                        <span class="right badge badge-@menuItem.Badge.Level.ToString().ToLower()">@menuItem.Badge.Message</span>
+                    }
+                    @if(menuItem.Items?.Count > 0)
+                    {
+                        <i class="right fas fa-angle-left"></i>
+                    }
+                </p>
+            </a>
+            @if(menuItem.Items?.Count > 0)
+            {
+                <ul class="nav nav-treeview">
+                    @await Component.InvokeAsync("NavigationMenu", new { items=menuItem.Items})   
+                </ul>
+            }
+        </li>
+    }
+}

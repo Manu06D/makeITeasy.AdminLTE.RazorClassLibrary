@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using makeITeasy.AdminLTE.RazorClassLibrary.Attributes;
 using makeITeasy.AdminLTE.RazorClassLibrary.Models;
+using makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -19,9 +16,29 @@ namespace makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest.Controllers
             _pageDefinition = pageDefinition;
         }
 
+        [WebSitePage(Title = "Home")]
         public IActionResult Index()
         {
             _pageDefinition.Title = "WebAppTest - Welcome";
+
+            return View();
+        }
+
+        [WebSitePage(Title = "Dashboard1")]
+        public IActionResult DashBoard1()
+        {
+            return View();
+        }
+
+        [WebSitePage(Title = "Dashboard2")]
+        public IActionResult DashBoard2()
+        {
+            return View();
+        }
+
+        [WebSitePage(Title = "Empty")]
+        public IActionResult Empty()
+        {
             return View();
         }
     }

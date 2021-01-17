@@ -1,5 +1,6 @@
 using System.IO;
 using System.Reflection;
+using makeITeasy.AdminLTE.RazorClassLibrary.Extensions;
 using makeITeasy.AdminLTE.RazorClassLibrary.Models;
 using makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest.Models;
 using Microsoft.AspNetCore.Builder;
@@ -28,7 +29,12 @@ namespace makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest
             services.AddScoped<PageDefinition>();
             services.AddSingleton<ISiteDefinition, WebAppSiteDefinition>();
             var builder = services.AddControllersWithViews();
-
+            services.DiscoverWebSitePage(Assembly.GetExecutingAssembly());
+            services.AddScoped<IUserInformation>((x) => new UserInformation()
+            {
+                Name = "Alexander Pierce",
+                AvatarUrl = "/lib/admin-lte/img/user2-160x160.jpg"
+            });
 
 #if DEBUG
             if (_env.IsDevelopment())
@@ -55,7 +61,6 @@ namespace makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 //app.UseHsts();
             }
             app.UseHttpsRedirection();
@@ -71,6 +76,8 @@ namespace makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            app.SetUpWebSite(Assembly.GetExecutingAssembly());
         }
     }
 }
