@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
+using SmartBreadcrumbs.Extensions;
 
 namespace makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest
 {
@@ -50,6 +51,7 @@ namespace makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest
                 });
             }
 #endif
+            services.ConfigureWebSite(GetType().Assembly);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -78,6 +80,8 @@ namespace makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest
             });
 
             app.SetUpWebSite(Assembly.GetExecutingAssembly());
+
+
         }
     }
 }

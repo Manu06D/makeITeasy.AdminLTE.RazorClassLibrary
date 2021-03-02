@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.5</Version>
+    <Version>0.0.6</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,6 +26,10 @@
     <Folder Include="wwwroot\dist\js" />
     <Folder Include="wwwroot\lib\admin-lte\css\" />
     <Folder Include="wwwroot\lib\admin-lte\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SmartBreadcrumbs" Version="3.6.1" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,6 +3,7 @@ using makeITeasy.AdminLTE.RazorClassLibrary.Models;
 using makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using SmartBreadcrumbs.Attributes;
 
 namespace makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest.Controllers
 {
@@ -17,6 +18,7 @@ namespace makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest.Controllers
         }
 
         [WebSitePage(Title = "Home")]
+        [DefaultBreadcrumb("home")]
         public IActionResult Index()
         {
             _pageDefinition.Title = "WebAppTest - Welcome";
@@ -25,12 +27,14 @@ namespace makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest.Controllers
         }
 
         [WebSitePage(Title = "Dashboard1")]
+        [Breadcrumb("Dashboard1")]
         public IActionResult DashBoard1()
         {
             return View();
         }
 
         [WebSitePage(Title = "Dashboard2")]
+        [Breadcrumb("Dashboard2")]
         public IActionResult DashBoard2()
         {
             return View();
