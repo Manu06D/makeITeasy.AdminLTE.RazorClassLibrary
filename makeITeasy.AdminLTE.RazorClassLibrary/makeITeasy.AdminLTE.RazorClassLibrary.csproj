@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.6-beta</Version>
+    <Version>0.0.6-b1</Version>
   </PropertyGroup>
 
   <ItemGroup>
