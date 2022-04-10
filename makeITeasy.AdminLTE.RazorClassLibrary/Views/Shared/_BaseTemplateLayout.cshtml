@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 
     <link rel="stylesheet" href="/_content/makeITeasy.AdminLTE.RazorClassLibrary/dist/css/adminlte.min.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="/_content/makeITeasy.AdminLTE.RazorClassLibrary/dist/css/adminlte.plugins.min.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="/_content/makeITeasy.AdminLTE.RazorClassLibrary/dist/css/adminlte.vendors.min.css" asp-append-version="true"/>
     @RenderSection("Style", required: false)
 </head>
 <body class="hold-transition sidebar-mini @(webSiteDefinition.NavigationType == NavigationTypeEnum.TopNavBar ? "layout-top-nav" : "")">
@@ -99,7 +101,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <img src="~/lib/admin-lte/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
@@ -115,7 +117,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="~/lib/admin-lte/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         John Pierce
@@ -131,7 +133,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="~/lib/admin-lte/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Nora Silvester
@@ -292,6 +294,7 @@
     <!-- ./wrapper -->
 
     <script src="/_content/makeITeasy.AdminLTE.RazorClassLibrary/dist/js/adminlte.min.js" asp-append-version="true"></script>
+    <script src="/_content/makeITeasy.AdminLTE.RazorClassLibrary/dist/js/adminlte.vendors.min.js" asp-append-version="true"></script>
     <script>
         $( document ).ready(function() {
             setActiveMenuCurrentPage();

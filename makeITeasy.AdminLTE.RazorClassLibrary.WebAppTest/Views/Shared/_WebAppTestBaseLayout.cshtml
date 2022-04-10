@@ -8,6 +8,11 @@
 
 @RenderBody()
 
+@section Scripts{
+    <script src="~/dist/site.min.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+}
+
 @section FooterLeftContent{
      <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
 }

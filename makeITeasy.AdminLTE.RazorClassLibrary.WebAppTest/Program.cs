@@ -7,7 +7,15 @@ namespace makeITeasy.AdminLTE.RazorClassLibrary.WebAppTest
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            try
+            {
+                CreateHostBuilder(args).Build().Run();
+            }
+            catch (System.Exception exception)
+            {
+                string errorMessage = exception.Message;
+                throw;
+            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

@@ -3,18 +3,19 @@
     "outputFileName": "wwwroot/dist/css/adminlte.min.css",
     "inputFiles": [
       "wwwroot/lib/admin-lte/css/alt/adminlte.core.css",
-      "wwwroot/src/css/site.css"
+      "wwwroot/lib/admin-lte/css/alt/adminlte.components.css",
+      "wwwroot/lib/admin-lte/css/alt/adminlte.extra-components.css",
+      "wwwroot/src/css/site.css",
+      "wwwroot/src/css/ionicons.min.css"
     ],
     "minify": { "enabled": true }
   },
   {
-    "outputFileName": "wwwroot/dist/css/adminlte.additional.min.css",
+    "outputFileName": "wwwroot/dist/css/adminlte.plugins.min.css",
     "inputFiles": [
-      "wwwroot/lib/admin-lte/css/alt/adminlte.components.css",
-      "wwwroot/lib/admin-lte/css/alt/adminlte.extra-components.css",
       "wwwroot/lib/admin-lte/css/alt/adminlte.plugins.css"
     ],
-    "minify": {"enabled": true}
+    "minify": { "enabled": true }
   },
   {
     "outputFileName": "wwwroot/dist/css/adminlte.pages.min.css",
@@ -29,7 +30,39 @@
       "wwwroot/lib/jquery/jquery.js",
       "wwwroot/lib/twitter-bootstrap/js/bootstrap.js",
       "wwwroot/lib/admin-lte/js/adminlte.js",
-      "wwwroot/src/js/site.js"
+      "wwwroot/src/js/site.js",
+      "wwwroot/lib/jquery-ui-dist/jquery-ui.min.js"
+    ],
+    "minify": { "enabled": true }
+  },
+  {
+    "outputFileName": "wwwroot/dist/js/adminlte.vendors.min.js",
+    "inputFiles": [
+      "wwwroot/lib/moment.js/moment.min.js",
+      "wwwroot/lib/jquery-ui-dist/jquery-ui.min.js",
+      "wwwroot/lib/summernote/summernote.min.js",
+      "wwwroot/lib/daterangepicker/daterangepicker.min.js",
+      "wwwroot/lib/jquery-knob-chif/dist/jquery.knob.min.js",
+      "wwwroot/lib/jqvmap-novulnerability/dist/jquery.vmap.min.js",
+      "wwwroot/lib/sparklines/source/sparkline.min.js",
+      "wwwroot/lib/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js",
+      "wwwroot/lib/overlayscrollbars/js/jquery.overlayScrollbars.min.js",
+      "wwwroot/lib/daterangepicker/daterangepicker.min.js",
+      "wwwroot/lib/chart.js/dist/Chart.min.js",
+      "wwwroot/lib/jquery-mapael/js/jquery.mapael.min.js"
+    ],
+    "minify": { "enabled": true }
+  },
+  {
+    "outputFileName": "wwwroot/dist/css/adminlte.vendors.min.css",
+    "inputFiles": [
+      "wwwroot/lib/jquery-ui-dist/jquery-ui.min.css",
+      "wwwroot/lib/daterangepicker/daterangepicker.min.css",
+      "wwwroot/lib/jqvmap-novulnerability/dist/jqvmap.min.css",
+      "wwwroot/lib/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css",
+      "wwwroot/lib/overlayscrollbars/css/OverlayScrollbars.min.css",
+      "wwwroot/lib/daterangepicker/daterangepicker.min.css",
+      "wwwroot/lib/chart.js/dist/Chart.min.css"
     ],
     "minify": { "enabled": true }
   }

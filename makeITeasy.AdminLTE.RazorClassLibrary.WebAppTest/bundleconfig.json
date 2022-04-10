@@ -1,14 +1,17 @@
 [
   {
-    "outputFileName": "wwwroot/js/site.min.js",
+    "outputFileName": "wwwroot/dist/site.min.js",
     "inputFiles": [
-      "wwwroot/js/site.js"
+      "wwwroot/js/site.js",
+      "wwwroot/lib/jqvmap-novulnerability/dist/maps/jquery.vmap.usa.min.js",
+
     ]
   },
   {
     "outputFileName": "wwwroot/dist/site.min.css",
     "inputFiles": [
-      "wwwroot/lib/font-awesome/css/all.min.css"
+      "wwwroot/lib/font-awesome/css/all.min.css",
+      "wwwroot/lib/admin-lte/css/alt/adminlte.pages.min.css"
     ]
   }
 ]

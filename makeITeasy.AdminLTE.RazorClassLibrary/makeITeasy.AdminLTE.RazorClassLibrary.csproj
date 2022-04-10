@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.6-b1</Version>
+    <Version>0.0.6-b2</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,8 +24,6 @@
   <ItemGroup>
     <Folder Include="wwwroot\dist\css" />
     <Folder Include="wwwroot\dist\js" />
-    <Folder Include="wwwroot\lib\admin-lte\css\" />
-    <Folder Include="wwwroot\lib\admin-lte\js\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +35,4 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-
-
 </Project>
